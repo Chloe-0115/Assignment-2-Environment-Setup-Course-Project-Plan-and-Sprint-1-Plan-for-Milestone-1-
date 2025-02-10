@@ -1,0 +1,10 @@
+welcome_message=Welcome to FinTrack, Your Personal Expense Companion. Effortlessly track your expenses, income and take control of your financial journey. Let's start! Your budget records will be saved in 'budget_records.txt'.
+help_message=Help - How to Use the App: 1. Add Income: Record your income manually.2. Add Expense: Record your expenses manually or by picture.3. Delete Record: Remove an existing record permanently.4. Edit Record: Modify an existing record.5. View Budget Overview: See a summary of your income, expenses, and progress towards your savings goal.6. Set Savings Goal: Define a savings goal to track your progress.7. Exit: Close the application.
+add_success=Record added successfully.
+delete_confirmation=Are you sure you want to delete '{record}'? You won't have your record back if you delete it. (yes/no):
+delete_success=Record deleted successfully.
+delete_cancelled=Deletion cancelled.
+edit_success=Record edited successfully.
+invalid_choice=Invalid choice. Please try again.
+invalid_number=Please enter a valid number.
+no_records=No records to {action}. 
