@@ -1,6 +1,7 @@
 # CS-361
 This is a repository for CS 361.
 Read Me for Assignment 8.
+
 This microservice accepts a JSON payload with budget summary data via a RESTful API and generates a PDF report as the response. It is built using Python, Flask, and FPDF.
 Key Features
 -Accepts JSON input with budget data
