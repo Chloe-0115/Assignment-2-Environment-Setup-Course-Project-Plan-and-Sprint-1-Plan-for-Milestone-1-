@@ -35,39 +35,12 @@ Expected Output:
 Example API Request:
 
 You can interact with the microservice using any HTTP client (e.g., Postman, curl, or custom Python scripts).
-<h3>
-    
-import requests
+<img width="447" alt="image" src="https://github.com/user-attachments/assets/c0cf934f-bc73-4c07-b7ca-88154058143a" />
 
-url = "http://127.0.0.1:5000/generate-pdf"
-json_data = {...}  # Use the JSON payload as shown above
-
-response = requests.post(url, json=json_data)
-
-if response.status_code == 200:
-    with open("report.pdf", "wb") as f:
-        f.write(response.content)
-    print("PDF report generated successfully!")
-else:
-    print(f"Failed to generate PDF. Status code: {response.status_code}")
-</h3>
 
 Example Code to Receive PDF Data:
-<h3>import requests
+<img width="448" alt="image" src="https://github.com/user-attachments/assets/dd1c843e-b02d-416c-af42-6e02c918a1e2" />
 
-url = "http://127.0.0.1:5000/generate-pdf"
-json_data = {...}  # Use the JSON payload as shown above
-
-response = requests.post(url, json=json_data)
-
-if response.status_code == 200:
-    pdf_filename = "received_report.pdf"
-    with open(pdf_filename, "wb") as f:
-        f.write(response.content)
-    print(f"PDF received and saved as {pdf_filename}")
-else:
-    print(f"Failed to receive PDF. Status code: {response.status_code}")
-    print("Response content:", response.text)</h3>
     
 
 UML Sequence Diagram:
