@@ -32,6 +32,26 @@ Expected Output:
 
 -Open the file to verify the data matches the input JSON.
 
+Example API Request:
+
+You can interact with the microservice using any HTTP client (e.g., Postman, curl, or custom Python scripts).
+Example Request using Python.
+
+[import requests
+
+url = "http://127.0.0.1:5000/generate-pdf"
+json_data = {...}  # Use the JSON payload as shown above
+
+response = requests.post(url, json=json_data)
+
+if response.status_code == 200:
+    with open("report.pdf", "wb") as f:
+        f.write(response.content)
+    print("PDF report generated successfully!")
+else:
+    print(f"Failed to generate PDF. Status code: {response.status_code}")]
+    
+
 UML Sequence Diagram:
 
 Below is the UML Sequence Diagram for the JSON to PDF Microservice:
