@@ -39,6 +39,7 @@ You can interact with the microservice using any HTTP client (e.g., Postman, cur
 
 
 Example Code to Receive PDF Data:
+
 <img width="448" alt="image" src="https://github.com/user-attachments/assets/dd1c843e-b02d-416c-af42-6e02c918a1e2" />
 
     
