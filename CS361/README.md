@@ -16,13 +16,13 @@ Key Features：
 
 -Returns a response indicating success or failure
 
-Prerequisites
+#Prerequisites
 
 Before running the microservice, ensure that you have installed the necessary dependencies:
 <img width="441" alt="image" src="https://github.com/user-attachments/assets/2a65773b-bfb9-4ac8-b527-0e9cbccf9e14" />
 
 
-How to Use the Microservice:
+#How to Use the Microservice:
 
 Run the Flask server using the following command:
 
@@ -32,7 +32,7 @@ You should see the server running at http://127.0.0.1:5000.
 
 You can interact with the microservice using any HTTP client (e.g., Postman, curl, or custom Python scripts).
 
-How to Use the Microservice
+#How to Use the Microservice:
 
 You can interact with the microservice using any HTTP client (e.g., Postman, curl, or a custom Python script).
 
@@ -53,21 +53,27 @@ Endpoint: /generate-pdf
 Input Format
 
 The JSON payload should follow this structure:
+
 <img width="417" alt="image" src="https://github.com/user-attachments/assets/f393c607-be77-427c-80ef-9c12e6e79a30" />
 
 Example API Request
 
 Using curl:
+
 <img width="427" alt="image" src="https://github.com/user-attachments/assets/b1acc892-1dc9-48b5-a8d1-aba351b6a3b3" />
 
 Response Format
 
 Upon a successful request, the microservice returns:
+
 <img width="394" alt="image" src="https://github.com/user-attachments/assets/80eacbd8-6026-4a25-bf78-89171bac6399" />
+
 If an error occurs, an error response will be sent:
+
 <img width="336" alt="image" src="https://github.com/user-attachments/assets/171ca454-bbb5-486c-b9a9-fc59c56cff7b" />
 
 Example Code to Receive PDF Data (Python)
+
 <img width="416" alt="image" src="https://github.com/user-attachments/assets/c38162a0-95c9-460e-ba4c-b44e5cb4eabf" />
 
 UML Sequence Diagram:
