@@ -2,7 +2,9 @@
 This is a repository for CS 361.
 Read Me for Assignment 8.
 
-This microservice accepts a JSON payload with budget summary data via a RESTful API and generates a PDF report as the response. It is built using Python, Flask, and FPDF.
+Overview
+
+This microservice accepts a JSON payload containing budget summary data via a RESTful API and generates a well-formatted PDF report as the response. It is built using Python, Flask, and FPDF.
 
 Key Features：
 
@@ -10,13 +12,17 @@ Key Features：
 
 -Generates a well-formatted PDF report
 
--Simple RESTful API with POST request
+-Provides a simple RESTful API with a POST request
+
+-Returns a response indicating success or failure
+
+Prerequisites
+
+Before running the microservice, ensure that you have installed the necessary dependencies:
+<img width="441" alt="image" src="https://github.com/user-attachments/assets/2a65773b-bfb9-4ac8-b527-0e9cbccf9e14" />
+
 
 How to Use the Microservice:
-
-First, ensure you have installed the necessary dependencies:
-
-pip install flask fpdf
 
 Run the Flask server using the following command:
 
@@ -26,28 +32,49 @@ You should see the server running at http://127.0.0.1:5000.
 
 You can interact with the microservice using any HTTP client (e.g., Postman, curl, or custom Python scripts).
 
-Expected Output:
+How to Use the Microservice
 
--Upon a successful request, a PDF file (report.pdf) will be generated.
+You can interact with the microservice using any HTTP client (e.g., Postman, curl, or a custom Python script).
 
--Open the file to verify the data matches the input JSON.
+Expected API Behavior
 
-Example API Request:
+Endpoint: /generate-pdf
 
-You can interact with the microservice using any HTTP client (e.g., Postman, curl, or custom Python scripts).
-<img width="447" alt="image" src="https://github.com/user-attachments/assets/c0cf934f-bc73-4c07-b7ca-88154058143a" />
+-Method: POST
 
+-Content-Type: application/json
 
-Example Code to Receive PDF Data:
+-Input: JSON object containing budget data
 
-<img width="448" alt="image" src="https://github.com/user-attachments/assets/dd1c843e-b02d-416c-af42-6e02c918a1e2" />
+-Output: PDF file (as a downloadable response or stored locally)
 
-    
+-Response: JSON confirmation message with a status code
+
+Input Format
+
+The JSON payload should follow this structure:
+<img width="417" alt="image" src="https://github.com/user-attachments/assets/f393c607-be77-427c-80ef-9c12e6e79a30" />
+
+Example API Request
+
+Using curl:
+<img width="427" alt="image" src="https://github.com/user-attachments/assets/b1acc892-1dc9-48b5-a8d1-aba351b6a3b3" />
+
+Response Format
+
+Upon a successful request, the microservice returns:
+<img width="394" alt="image" src="https://github.com/user-attachments/assets/80eacbd8-6026-4a25-bf78-89171bac6399" />
+If an error occurs, an error response will be sent:
+<img width="336" alt="image" src="https://github.com/user-attachments/assets/171ca454-bbb5-486c-b9a9-fc59c56cff7b" />
+
+Example Code to Receive PDF Data (Python)
+<img width="416" alt="image" src="https://github.com/user-attachments/assets/c38162a0-95c9-460e-ba4c-b44e5cb4eabf" />
 
 UML Sequence Diagram:
 
 Below is the UML Sequence Diagram for the JSON to PDF Microservice:
-![json_to_pdf_sequence_diagram](https://github.com/user-attachments/assets/b48b12f1-9bc4-49c2-aaf7-5c9cfa2cefdc)
+![output](https://github.com/user-attachments/assets/0586fedf-ecb6-48b2-a098-ef5b5522044d)
+
 
 This diagram demonstrates the interaction between the client, the microservice, and the PDF generator.
 
